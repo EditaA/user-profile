@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Billing Details</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="billing">
+    <div class="alert">
+        <h1 class="alert__title">Fill in your billing details</h1>
+        <p class="alert__text">you haven't enteres your billing information yet but you'll still be able to use your
+            free trail even
+            after
+            you provide them. Once your trail ends you will be charged the amount matching the plan and the number
+            of
+            seats you add by then</p>
+        <button class="btn">Add billing details</button>
+    </div>
+    <div class="row">
+        <div class="status">
+            <div class="status__box">
+                <h3 class="status__title">Users</h3>
+                <h2 class="status__number">1</h2>
+                <button class="btn btn--gray">Manage users</button>
+            </div>
+            <div class="status__box">
+                <h3 class="status__title">Free days left</h3>
+                <h2 class="status__number">14</h2>
+                <p class="status__ending-date">Ends in 15 April 2019</p>
+            </div>
+        </div>
+
+        <div class="payment">
+            <h2 class="payment__title">Payment method <strong>Not entered yet</strong></h2>
+            <button class="btn">Update billing info</button>
+            <div class="payment__icons">
+                <a href="#">s
+                    <i class="fab fa-cc-visa"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-cc-mastercard"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-cc-amex"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-cc-discover"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-cc-paypal"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="address">
+        <h2 class="address__title">Address</h2>
+        <form class="form">
+            <div class="form__wrapper">
+                <div class="row">
+                    <div class="form__group">
+                        <label class="form__label" for="fisrtname">First name</label>
+                        <input class="form__input" type="text" name="fisrtname" placeholder="First name">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="lastname">First name</label>
+                        <input class="form__input" type="text" name="lastname" placeholder="Last name">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="address">Address</label>
+                        <input class="form__input" type="text" name="address" placeholder="Address">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="apst/suite">APT/SUITE</label>
+                        <input class="form__input" type="text" name="apst/suite" placeholder="apst/suite">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form__group form__group--2x">
+                        <label class="form__label" for="company">Company</label>
+                        <input class="form__input" type="text" name="company" placeholder="Company">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="city">City</label>
+                        <input class="form__input" type="text" name="city" placeholder="City">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="country">Country</label>
+                        <input class="form__input" type="text" name="country" placeholder="Country">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form__group form__group--2x">
+                        <label class="form__label" for="email">E-mail Address</label>
+                        <input class="form__input" type="email" name="email" placeholder="E-mail Address">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="state">State/Province</label>
+                        <input class="form__input" type="text" name="state" placeholder="State/Province">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="zip">ZIP/Postal</label>
+                        <input class="form__input" type="text" name="zip" placeholder="ZIP/Postal">
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn" type="submit">Update Address Details</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
