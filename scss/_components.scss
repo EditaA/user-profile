@@ -1,15 +1,20 @@
 .btn {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     color: #fff;
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    border: 1px solid darken(#37bb37, 8);
+    border: 1px solid darken($color-primary, 8);
+    font-weight: 1.6rem;
 
     &--gray {
-        background-color: #ececec;
-        color: #333;
-        border: 1px solid darken(#ececec, 8);
+        background-color: $color-gray-light;
+        color: $color-gray-dark;
+        border: 1px solid darken($color-gray-light, 8);
+    }
+
+    &--large {
+        padding: 0.8rem 7rem;
+
     }
 }
