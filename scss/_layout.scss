@@ -8,11 +8,12 @@
 
 .row {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
 
-    &--flex {
-        display: flex;
-        justify-content: space-between;
-        margin: 2rem 0;
+    @include mediaMd {
+        flex-direction: column;
     }
 }
 
@@ -36,6 +37,10 @@
 .status {
     display: flex;
     flex: 0 1 49%;
+
+    @include mediaMd {
+        margin-bottom: 2rem;
+    }
 
     &__box {
         border: 1px solid $color-gray-medium;
@@ -75,13 +80,91 @@
     &__title {
         font-size: 1.8rem;
         font-weight: 400;
+
+        @include mediaMd {
+            margin-bottom: 1.6rem;
+        }
     }
 
     &__icons {
         font-size: 2rem;
 
+        @include mediaMd {
+            margin-top: 1.6rem;
+        }
+
         a:not(:last-child) {
             margin-right: 0.5rem;
         }
+
     }
+}
+
+.address {
+    border: 1px solid $color-gray-medium;
+    width: 100%;
+    padding: 1.6rem 1rem;
+
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+}
+
+.form {
+    text-align: center;
+
+    &__wrapper {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    &__group {
+        flex: 0 1 25%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include mediaMd {
+            flex: 0 1 50%;
+        }
+
+        &--2x {
+            flex: 0 1 50%;
+        }
+
+        @include mediaSm {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__label {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 0.8rem;
+    }
+
+    &__input {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        border: 1px solid $color-gray-dark;
+
+        &:focus {
+            border-color: $color-primary;
+        }
+    }
+
+
 }

@@ -36,11 +36,13 @@ a {
   padding-left: 1.6rem; }
 
 .row {
-  width: 100%; }
-  .row--flex {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0; }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0; }
+  @media screen and (max-width: 850px) {
+    .row {
+      flex-direction: column; } }
 
 .alert {
   background: #f8ffdb;
@@ -57,6 +59,9 @@ a {
 .status {
   display: flex;
   flex: 0 1 49%; }
+  @media screen and (max-width: 850px) {
+    .status {
+      margin-bottom: 2rem; } }
   .status__box {
     border: 1px solid #d3d3d3;
     flex: 1 1 50%;
@@ -84,10 +89,61 @@ a {
   .payment__title {
     font-size: 1.8rem;
     font-weight: 400; }
+    @media screen and (max-width: 850px) {
+      .payment__title {
+        margin-bottom: 1.6rem; } }
   .payment__icons {
     font-size: 2rem; }
+    @media screen and (max-width: 850px) {
+      .payment__icons {
+        margin-top: 1.6rem; } }
     .payment__icons a:not(:last-child) {
       margin-right: 0.5rem; }
+
+.address {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+  padding: 1.6rem 1rem; }
+  .address__title {
+    font-size: 1.8rem;
+    font-weight: 300; }
+
+.form {
+  text-align: center; }
+  .form__wrapper {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+  .form__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .form__group {
+    flex: 0 1 25%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    @media screen and (max-width: 850px) {
+      .form__group {
+        flex: 0 1 50%; } }
+    .form__group--2x {
+      flex: 0 1 50%; }
+    @media screen and (max-width: 500px) {
+      .form__group {
+        flex: 0 1 100%; } }
+  .form__label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem; }
+  .form__input {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: 1px solid #333; }
+    .form__input:focus {
+      border-color: #02b94b; }
 
 .btn {
   background-color: #02b94b;
