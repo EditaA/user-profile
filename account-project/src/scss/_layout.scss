@@ -1,0 +1,230 @@
+.setting-page {
+    max-width: 110rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 3rem;
+
+    &__actions {
+        flex: 0 1 23%;
+        background-color: #fff;
+        margin-right: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 1px 2px 4px rgba($color-grey-medium, 0.2);
+        padding: 2rem;
+
+    }
+
+    &__content {
+        flex: 0 1 77%;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 1px 2px 4px rgba($color-grey-medium, 0.2);
+
+    }
+
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+
+    &__menu-link {
+        align-self: flex-end;
+    }
+
+    &__basic-info {
+        display: flex;
+    }
+
+    &__details {
+        margin-bottom: 2rem;
+    }
+
+    &__name {
+        color: $color-grey-dark;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+        color: $color-primary;
+    }
+
+    &__title {
+        color: $color-grey-light-2;
+        font-size: 1.2rem;
+    }
+
+    &__interact {
+        margin-top: 1rem;
+    }
+
+    &__contact-info {
+        margin-bottom: 4rem;
+    }
+}
+
+.menu {
+
+    &__list {}
+
+    &__item {
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        display: flex;
+        color: $color-grey-light-2;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        padding: 0.6rem 1.2rem;
+        width: 100%;
+        font-weight: 500;
+
+
+    }
+
+    i {
+        margin-right: 1rem;
+    }
+
+    .is-active a {
+        color: $color-violet;
+        background-color: rgba($color-violet, 0.1);
+    }
+
+    &__badge {
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.1rem 0.6rem;
+        color: $color-violet;
+        background-color: rgba($color-violet, 0.1);
+        text-transform: none;
+        margin-left: auto;
+        font-weight: 700;
+
+        &--number {
+            color: $color-danger;
+            background-color: rgba($color-danger, 0.1);
+        }
+    }
+}
+
+.content-form {
+
+    &>* {
+        padding: 1rem 2rem;
+    }
+
+    &__header {
+        border-bottom: 2px solid $color-grey-light-1;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    &__subtitle {
+        color: $color-grey-light-2;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+
+    &__settings-icon {
+        margin-left: auto;
+        transform: rotate(90deg);
+        font-size: 1.6rem;
+        color: $color-violet;
+        background-color: rgba($color-violet, 0.1);
+        padding: 1rem;
+    }
+
+    &__main {}
+
+    &__group {
+        display: flex;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    &__label-wrapper {
+        flex: 20%;
+        text-align: right;
+        margin-right: 2rem;
+
+    }
+
+    &__label {
+        line-height: 33px;
+    }
+
+    &__input-wrapper {
+        flex: 80%;
+        position: relative;
+    }
+
+    &__input-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__at-sign {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.3rem;
+        width: 4.4rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $color-grey-dark;
+        text-align: center;
+        white-space: nowrap;
+        background-color: $color-grey-light-1;
+        border-left: 1px solid $color-grey-light-2;
+        border-top: 1px solid $color-grey-light-2;
+        border-bottom: 1px solid $color-grey-light-2;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid $color-grey-light-2;
+        border-radius: 3px;
+    }
+
+    &__spinner {
+        position: absolute;
+        right: 2rem;
+        top: 0.4rem;
+        font-size: 1.8rem;
+        color: $color-primary
+    }
+
+    &__info {
+        color: $color-grey-light-2;
+
+        &--moved-left {
+            margin-left: -4.4rem;
+        }
+    }
+
+    &__secondary {}
+
+    &__footer {
+        border-top: 2px solid $color-grey-light-1;
+    }
+}
