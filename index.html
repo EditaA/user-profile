@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Project</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="setting-page">
+    <aside class="setting-page__actions">
+        <div class="user">
+            <a href="#" class="user__menu-link">
+                <i class="fas fa-ellipsis-h"></i>
+            </a>
+
+            <div class="user__basic-info">
+                <div class="avatar">
+                    <img class="avatar__img" src="./img/avatar.jpg" alt="user photo">
+                </div>
+                <div class="user__details">
+                    <h3 class="user__name">Jason Muller</h3>
+                    <i class="user__icon fas fa-check-circle"></i>
+                    <h6 class="user__title">Head of Development</h6>
+                    <div class="user__interact">
+                        <a href="#" class="btn btn--primary">chat</a>
+                        <a href="#" class="btn btn--secondary">follow</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user__contact-info">
+                <div class="contact">
+                    <h6 class="contact__title">Email:</h6>
+                    <p class="contact__text">matt@flfestudios.com</p>
+                </div>
+                <div class="contact">
+                    <h6 class="contact__title">Phone:</h6>
+                    <p class="contact__text">44(76)34254578</p>
+                </div>
+                <div class="contact">
+                    <h6 class="contact__title">Location:</h6>
+                    <p class="contact__text">Melbourne</p>
+                </div>
+            </div>
+
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-address-card"></i>
+                        profile overview
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-user-alt"></i>
+                        personal information
+                    </a>
+                </li>
+                <li class="menu__item is-active">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-qrcode"></i>
+                        account information
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-passport"></i>
+                        change password
+                        <span class="menu__badge menu__badge--number"> 5</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-envelope-open-text"></i>
+                        email setting-pages
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-credit-card"></i>
+                        saved credit cards
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="fas fa-file-invoice"></i>
+                        tax information
+                        <span class="menu__badge">new</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <i class="far fa-credit-card"></i>
+                        statements
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="setting-page__content">
+        <form class="content-form">
+            <div class="content-form__header">
+                <h2 class="content-form__title">account information</h2>
+                <h6 class="content-form__subtitle">change your account settings</h6>
+                <i class="content-form__settings-icon fas fa-sliders-h"></i>
+            </div>
+
+            <div class="content-form__main">
+                <h2 class="content-form__title">account</h2>
+                <div class="content-form__group">
+                    <div class="content-form__label-wrapper">
+                        <label for="username" class="content-form__label">Username</label>
+
+                    </div>
+                    <div class="content-form__input-wrapper">
+                        <input type="text" class="content-form__input" placeholder="Username" id="username" required>
+                        <span class="content-form__spinner">
+                            <i class="fas fa-spinner"></i>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="content-form__group">
+                    <div class="content-form__label-wrapper">
+                        <label for="email" class="content-form__label">Email Address</label>
+
+                    </div>
+
+                    <div class="content-form__input-wrapper">
+                        <div class="content-form__input-group">
+                            <span class="content-form__at-sign" id="basic-addon1">@</span>
+                            <input type="email" class="content-form__input" placeholder="Email Address" id="email"
+                                required>
+                        </div>
+
+                        <small class="content-form__info">Email will not be publicly
+                            displayed <a href="#" class="link-text">Learn more</a></small>
+
+                    </div>
+                </div>
+                <div class="content-form__group">
+                    <div class="content-form__label-wrapper">
+                        <label for="language" class="content-form__label">Language</label>
+
+                    </div>
+                    <div class="content-form__input-wrapper">
+                        <select class="content-form__input" id="language">
+                            <option value="Albanian">Albanian</option>
+                            <option value="English" selected>English</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="content-form__group">
+                    <div class="content-form__label-wrapper">
+                        <label for="zone" class="content-form__label">Time Zone</label>
+
+                    </div>
+                    <div class="content-form__input-wrapper">
+                        <select class="content-form__input">
+                            <option value="GMT +1">GMT +1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="content-form__group">
+                    <div class="content-form__label-wrapper">
+
+                    </div>
+                    <!-- <div class="content-form__input-wrapper"></div>
+                    <h1>Communication</h1>
+                    <input type="checkbox" class="content-form__input" id="communication" required>
+                    <label for="communication" class="content-form__label">Time Zone</label> -->
+                </div>
+            </div>
+
+            <div class="content-form__secondary">
+                <h2 class="content-form__title">security</h2>
+            </div>
+
+            <div class="content-form__footer">
+                <div class="content-form__group">
+                    <div class="content-form__label-wrapper">
+
+                    </div>
+                    <div class="content-form__input-wrapper">
+                        <button class="btn btn--main">submit</button>
+                        <button class="btn btn--outlined">cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
